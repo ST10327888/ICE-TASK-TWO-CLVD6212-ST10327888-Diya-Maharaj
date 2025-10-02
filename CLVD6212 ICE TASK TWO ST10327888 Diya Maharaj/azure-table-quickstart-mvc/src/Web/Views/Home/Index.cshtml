@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Home";
+}
+<h2>Azure Table Quickstart - MVC Sample</h2>
+<p>This sample inserts a sample Product row into the configured table.</p>
+@if (TempData["Message"] != null) {
+    <div>@TempData["Message"]</div>
+}
+<form method="post" asp-action="AddSample">
+    <button type="submit">Insert sample product</button>
+</form>
